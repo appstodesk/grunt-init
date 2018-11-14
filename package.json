@@ -24,17 +24,17 @@
     "test": "grunt test"
   },
   "dependencies": {
-    "prompt": "~0.1.12",
-    "semver": "~1.0.14",
-    "hooker": "~0.2.3",
+    "async": "~0.2.10",
     "colors": "~0.6.0-1",
-    "grunt": "~0.4.0",
-    "lodash": "~2.4.1",
-    "async": "~0.2.10"
+    "grunt": "^1.0.3",
+    "hooker": "~0.2.3",
+    "lodash": "^4.17.11",
+    "prompt": "^1.0.0",
+    "semver": "^5.6.0"
   },
   "devDependencies": {
-    "grunt-contrib-jshint": "~0.8.0",
-    "grunt-contrib-nodeunit": "~0.3.0"
+    "grunt-contrib-jshint": "^2.0.0",
+    "grunt-contrib-nodeunit": "^2.0.0"
   },
   "keywords": [
     "grunt",
