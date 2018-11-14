@@ -40,6 +40,8 @@ module.exports = function(grunt) {
     var templates = helpers.getTemplates();
     var initTemplate = templates[name];
 
+    var init;
+
     // Abort if a valid template was not specified.
     if (!initTemplate) {
       if (name) {
@@ -125,10 +127,10 @@ module.exports = function(grunt) {
       keywords: {
         message: 'Project keywords (separated by space)',
         sanitize: function(value, data, done) { 
-          done(null, value 
-                        ? value.replace(/^\s+|\s+$/g, '')
-                               .split(/\s+/)
-                        : []); 
+          done(null, value ?
+            value.replace(/^\s+|\s+$/g, '')
+            .split(/\s+/)
+            : []); 
         }
       },
       version: {
@@ -291,7 +293,7 @@ module.exports = function(grunt) {
     var pathPrefix = name + '/root/';
 
     // Useful init sub-task-specific utilities.
-    var init = _.extend(helpers, {
+    init = _.extend(helpers, {
       // Expose prompt interface on init object.
       process: prompt.process,
       prompt: prompt.prompt,
@@ -486,7 +488,7 @@ module.exports = function(grunt) {
           // Run npm install in project's directory
           grunt.util.spawn({cmd: 'npm', args: ['install'],
                             opts: {cwd: init.destpath, stdio: 'inherit'}},
-              function(error, result, code) {
+              function() {
                 if (done) {
                   done();
                 }
