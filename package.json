@@ -2,17 +2,17 @@
   "name": "grunt-init",
   "description": "Generate project scaffolding from a template.",
   "version": "0.3.1",
-  "homepage": "https://github.com/gruntjs/grunt-init",
+  "homepage": "https://github.com/appstodesk/grunt-init",
   "author": {
     "name": "Grunt Team",
     "url": "http://gruntjs.com/"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/gruntjs/grunt-init.git"
+    "url": "git://github.com/appstodesk/grunt-init.git"
   },
   "bugs": {
-    "url": "https://github.com/gruntjs/grunt-init/issues"
+    "url": "https://github.com/appstodesk/grunt-init/issues"
   },
   "license": "MIT",
   "preferGlobal": true,
